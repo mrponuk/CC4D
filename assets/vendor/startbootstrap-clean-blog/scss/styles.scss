@@ -8,11 +8,14 @@
 @import "./global";
 
 // Components
+@import "./components//modals";
 @import "./components/buttons";
+@import "./components/divider";
 @import "./components/navbar";
 
 // Sections
 @import "./sections/contact";
 @import "./sections/footer";
 @import "./sections/masthead";
+@import "./sections/portfolio";
 @import "./sections/post";
