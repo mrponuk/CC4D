@@ -1,6 +1,6 @@
 # CC4D Website
 
-A modified version of [Bootstrap Freelancer](https://github.com/StartBootstrap/startbootstrap-freelancer) to be used for Community Creativity 4 Development.
+A modified version of [Bootstrap Clean Blog Jekyll](https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll) to be used for Community Creativity 4 Development.
 
 ## Download and Installation
 
