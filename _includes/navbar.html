@@ -11,8 +11,11 @@
         <li class="nav-item">
           <a class="nav-link" href="{{"/" | relative_url }}">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{"/about" | relative_url }}">About</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-bs-toggle="dropdown">About</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{{"/about" | relative_url }}"">About CC4D</a></li>
+            </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ "/posts" | relative_url }}">Posts</a>
