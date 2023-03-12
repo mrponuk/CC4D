@@ -4,7 +4,7 @@ A modified version of [Bootstrap Clean Blog Jekyll](https://github.com/StartBoot
 
 ## Download and Installation
 
-To run the website locally, you must first install npm and git:
+To run the website locally, you must first install Jekyll and git:
 - [Download and install Jekyll](https://jekyllrb.com/docs/installation/)
 - [Download and install the latest release of git](https://git-scm.com/downloads)
     - If you are installing git for MacOS or Linux follow [these instructions to install the Git Credential Manager](https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/install.md)
