@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 gem "jekyll", ">= 3.9.3"
 gem "jekyll-theme-clean-blog"
+gem "jekyll-remote-theme"
 
 
 group :jekyll_plugins do

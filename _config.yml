@@ -2,7 +2,7 @@ title:              "Community Creativity 4 Development"
 email:              info@cc4duganda.org
 description:        "Connecting communities while finding solutions to protect the environment from global warming."
 author:             CC4D
-baseurl:            "/CC4D/"
+baseurl:            "/CC4D"
 url:                "https://mrponuk.github.io"
 
 # Social Profiles
@@ -17,7 +17,8 @@ youtube_username:    "@comcreative4d"
 google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
 
 # Build settings
-theme:              jekyll-theme-clean-blog
+# theme:              jekyll-theme-clean-blog
+remote_theme:       https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll
 markdown:           kramdown
 paginate:           5
 paginate_path:      "/posts/page:num/"
@@ -25,3 +26,4 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+  - jekyll-remote-theme
