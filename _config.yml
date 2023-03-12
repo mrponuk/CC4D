@@ -17,8 +17,8 @@ youtube_username:    "@comcreative4d"
 google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
 
 # Build settings
-# theme:              jekyll-theme-clean-blog
-remote_theme:       https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll
+theme:              jekyll-theme-clean-blog
+# remote_theme:       https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll
 markdown:           kramdown
 paginate:           5
 paginate_path:      "/posts/page:num/"
