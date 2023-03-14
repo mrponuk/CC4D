@@ -8,11 +8,6 @@
     .navbar-brand {
         font-weight: 800;
         color: $gray-800;
-        
-        &:focus,
-        &:hover {
-            color: $primary;
-        }
     }
 
     .navbar-toggler {
@@ -21,10 +16,6 @@
         padding: 13px;
         text-transform: uppercase;
         color: $gray-800;
-
-        &:hover {
-            color: $primary;
-        }
     }
 
     .navbar-nav {
@@ -34,12 +25,6 @@
                 font-weight: 800;
                 letter-spacing: 1px;
                 text-transform: uppercase;
-                color: $gray-800;
-
-                &:focus,
-                &:hover {
-                    color: $primary;
-                }
             }
         }
     }
@@ -66,7 +51,7 @@
 
                     &:focus,
                     &:hover {
-                        color: $primary;
+                        color: fade-out($white, .2);
                     }
                 }
             }
@@ -86,39 +71,46 @@
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
 
-        position: fixed;
-        transition: transform 0.2s;
-        border-bottom: 1px solid darken($white, .05);
-        background-color: fade-out($white, .1);
+        &.is-fixed {
+            /* when the user scrolls down, we hide the header right above the viewport */
+            position: fixed;
+            top: -67px;
+            -webkit-transition: -webkit-transform 0.2s;
+            -moz-transition: -moz-transform 0.2s;
+            transition: transform 0.2s;
+            border-bottom: 1px solid darken($white, .05);
+            background-color: fade-out($white, .1);
 
-        .navbar-brand {
-            color: $gray-900;
+            .navbar-brand {
+                color: $gray-900;
 
-            &:focus,
-            &:hover {
-                color: $primary;
+                &:focus,
+                &:hover {
+                    color: $primary;
+                }
             }
-        }
 
-        .navbar-nav {
-            >li.nav-item {
-                >a {
-                    color: $gray-900;
+            .navbar-nav {
+                >li.nav-item {
+                    >a {
+                        color: $gray-900;
 
-                    &:focus,
-                    &:hover {
-                        color: $primary;
+                        &:focus,
+                        &:hover {
+                            color: $primary;
+                        }
                     }
                 }
             }
         }
+
+        &.is-visible {
+            /* if the user changes the scrolling direction, we show the header */
+            -webkit-transform: translate3d(0, 100%, 0);
+            -moz-transform: translate3d(0, 100%, 0);
+            -ms-transform: translate3d(0, 100%, 0);
+            -o-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+        }
     }
 }
-
-// On hover navbar dropdown
-@media all and (min-width: 992px) {
-    .navbar .nav-item .dropdown-menu{ display: none; }
-    .navbar .nav-item:hover .nav-link{   }
-    .navbar .nav-item:hover .dropdown-menu{ display: block; }
-    .navbar .nav-item .dropdown-menu{ margin-top:0; }
-}	
