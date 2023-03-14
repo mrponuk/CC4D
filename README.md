@@ -16,7 +16,7 @@ To run the website locally, you must first install Jekyll and git:
 - Open Command Prompt
 - Navigate to desktop: `cd desktop`
 - Clone the repo: `git clone https://github.com/mrponuk/CC4D.git`
-    - This should bring up the Github Credential Manager, make sure to sign in.
+    - If this is your first time cloning a repo this should bring up the Github Credential Manager, make sure to sign in.
 - Navigate to the CC4D root directory: `cd CC4D`
 - Run `bundle exec jekyll serve`
     - The website is now live. Go to your browser and enter: `http://127.0.0.1:4000/CC4D/`
@@ -25,7 +25,7 @@ To run the website locally, you must first install Jekyll and git:
 
 - Open Command Prompt
 - Navigate to CC4D root directory `cd desktop/CC4D`
-- Pull the repo: `git pull origin`
+- Pull the repo: `git pull origin main`
 - Run `bundle exec jekyll serve`
     - The website is now live. Go to your browser and enter: `http://127.0.0.1:4000/CC4D/`
 

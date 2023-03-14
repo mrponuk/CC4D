@@ -5,9 +5,11 @@ gem "jekyll-theme-clean-blog"
 gem "jekyll-remote-theme"
 
 
+
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
-  gem "jekyll-paginate", "~> 1.1.0"
+  gem "jekyll-paginate-v2"
+  # gem "jekyll-paginate", "~> 1.1.0"
   gem "jekyll-sitemap"
   gem "github-pages", "~> 228"
 end

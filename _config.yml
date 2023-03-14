@@ -20,10 +20,28 @@ google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
 # theme:              jekyll-theme-clean-blog
 remote_theme:       https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll
 markdown:           kramdown
-paginate:           5
-paginate_path:      "/posts/page:num/"
+
+# Collections configurations
+collections:
+  posts:
+    output:         true
+    permalink:      "/posts/:path/"
+  projects:
+    output:         true
+    permalink:      "/projects/:path/"
+
+# Pagination Settings
+pagination:
+  enabled:          true 
+  per_page:         5 
+  permalink:        "/page:num/"
+  sort_field:       "date"
+  sort_reverse:     true
+
+# paginate_path:      "/posts/page:num/"
 plugins:
   - jekyll-feed
-  - jekyll-paginate
+  # - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
   - jekyll-remote-theme

@@ -4,7 +4,7 @@ A modified version of [Bootstrap Clean Blog Jekyll](https://github.com/StartBoot
 
 ## Download and Installation
 
-To run the website locally, you must first install npm and git:
+To run the website locally, you must first install Jekyll and git:
 - [Download and install Jekyll](https://jekyllrb.com/docs/installation/)
 - [Download and install the latest release of git](https://git-scm.com/downloads)
     - If you are installing git for MacOS or Linux follow [these instructions to install the Git Credential Manager](https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/install.md)
@@ -16,7 +16,7 @@ To run the website locally, you must first install npm and git:
 - Open Command Prompt
 - Navigate to desktop: `cd desktop`
 - Clone the repo: `git clone https://github.com/mrponuk/CC4D.git`
-    - This should bring up the Github Credential Manager, make sure to sign in.
+    - If this is your first time cloning a repo this should bring up the Github Credential Manager, make sure to sign in.
 - Navigate to the CC4D root directory: `cd CC4D`
 - Run `bundle exec jekyll serve`
     - The website is now live. Go to your browser and enter: `http://127.0.0.1:4000/CC4D/`
@@ -25,7 +25,7 @@ To run the website locally, you must first install npm and git:
 
 - Open Command Prompt
 - Navigate to CC4D root directory `cd desktop/CC4D`
-- Pull the repo: `git pull origin`
+- Pull the repo: `git pull origin main`
 - Run `bundle exec jekyll serve`
     - The website is now live. Go to your browser and enter: `http://127.0.0.1:4000/CC4D/`
 
