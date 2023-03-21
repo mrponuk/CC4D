@@ -1,27 +1,59 @@
 ---
-layout: page
+layout: default
 title: Contact Us
 background: '/img/bg-contact.jpg'
 ---
 
-<p>
-  <b>Questions?</b> Want to get in touch?<br>
-  You can reach out to use here.
-</p>
+<header class="masthead" style="background-image: url('{{ "/img/bg-contact.jpg" | prepend: site.baseurl | replace: '//', '/' }}')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-heading">
+          <h1>{{ page.title }}</h1>
+          {% if page.subtitle %}
+          <h2 class="subheading">{{ page.subtitle }}</h2>
+          {% endif %}
+          <span class="meta">Posted by
+            <a href="#">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a>
+            on {{ page.date | date: '%B %d, %Y' }} &middot; {% include read_time.html
+            content=page.content %}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
 
-<p>
-  <b>Email:</b>
-  <a class="text-decoration-none text-primary" href="mailto:info@cc4duganda.org">info@cc4duganda.org</a>
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 justify-content-center">
+      <p>
+        <b>Questions?</b> Want to get in touch?<br>
+        You can reach out to us here.
+      </p>
 
-<p>
-    <b>Mobile:</b> +256-773525037<br>
-    <b>Telegram & Whatsapp:</b> +256-754937311
-</p>
+      <p>
+        <b>Email:</b>
+        <a class="text-decoration-none text-primary" href="mailto:info@cc4duganda.org">info@cc4duganda.org</a>
+      </p>
 
-<p>
-    Or follow us on
-    <a class="text-decoration-none text-primary" href="https://twitter.com/{{ site.twitter_username }}"  target="_blank" rel="noopener noreferrer">twitter</a>,
-    <a class="text-decoration-none text-primary" href="https://facebook.com/{{ site.faccebook_username }}"  target="_blank" rel="noopener noreferrer">facebook</a>, and
-    <a class="text-decoration-none text-primary" href="https://youtube.com/{{ site.youtbue_username }}"  target="_blank" rel="noopener noreferrer">youtube</a>.
-</p>
+      <p>
+          <b>Mobile:</b> +256-773525037<br>
+          <b>Telegram & Whatsapp:</b> +256-754937311
+      </p>
+
+      <p>
+          Or follow us on
+          <a class="text-decoration-none text-primary" href="https://twitter.com/{{ site.twitter_username }}"  target="_blank" rel="noopener noreferrer">twitter</a>,
+          <a class="text-decoration-none text-primary" href="https://facebook.com/{{ site.faccebook_username }}"  target="_blank" rel="noopener noreferrer">facebook</a>, and
+          <a class="text-decoration-none text-primary" href="https://youtube.com/{{ site.youtbue_username }}"  target="_blank" rel="noopener noreferrer">youtube</a>.
+      </p>
+    </div>
+    <div class="col-lg-6">
+      <div class="embed-responsive embed-responsive-4by3 justify-content-center">
+        <iframe width="425" height="350" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=31.393609642982486%2C2.9672451209777564%2C31.400690674781803%2C2.9719701841226636&amp;layer=mapnik&amp;marker=2.9696076550769823%2C31.39715015888214" style="border: 1px solid black"></iframe><br/><small><a class="text-decoration-none text-primary" href="https://www.openstreetmap.org/?mlat=2.96961&amp;mlon=31.39715#map=18/2.96961/31.39715" target="_blank" rel="noopener noreferrer">View Larger Map</a></small>
+      </div>
+    </div>
+  </div>
+</div>
