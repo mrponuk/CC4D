@@ -7,9 +7,9 @@ title: Our Projects
 background: '/img/bg-post.jpg'
 ---
 
+<div class="container">
 {% for post in paginator.posts %}
   {% if post.background %}
-
     <div class="row">
       <div class="col-xl-6">
         <img class="img-fluid" src="{{ post.background | prepend: site.baseurl | replace: '//', '/' }}" />
@@ -60,6 +60,7 @@ background: '/img/bg-post.jpg'
   <hr>
 
 {% endfor %}
+</div>
 
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}

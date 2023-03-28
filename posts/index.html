@@ -7,6 +7,7 @@ title: Our Blog
 background: '/img/bg-post.jpg'
 ---
 
+<div class="container">
 {% for post in paginator.posts %}
 
 <article class="post-preview">
@@ -31,6 +32,7 @@ background: '/img/bg-post.jpg'
 <hr>
 
 {% endfor %}
+</div>
 
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}

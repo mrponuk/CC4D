@@ -42,14 +42,28 @@
   display: block;
 }
 
-.carousel-item-next:not(.carousel-item-left),
-.active.carousel-item-right {
-  transform: translateX(100%);
+@media (max-width: 767px) {
+  .carousel-item-next:not(.carousel-item-left),
+  .active.carousel-item-right {
+    transform: translateX(100%);
+  }
+
+  .carousel-item-prev:not(.carousel-item-right),
+  .active.carousel-item-left {
+    transform: translateX(-100%);
+  }
 }
 
-.carousel-item-prev:not(.carousel-item-right),
-.active.carousel-item-left {
-  transform: translateX(-100%);
+@media (min-width: 768px) {
+  .carousel-item-next:not(.carousel-item-left),
+  .active.carousel-item-right {
+    transform: translateX(33%);
+  }
+
+  .carousel-item-prev:not(.carousel-item-right),
+  .active.carousel-item-left {
+    transform: translateX(-33%);
+  }
 }
 
 
