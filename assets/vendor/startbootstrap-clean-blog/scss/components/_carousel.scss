@@ -1,0 +1,31 @@
+/* medium and up screens */
+@media (max-width: 767px) {
+	.carousel-inner {
+		.carousel-item {
+			>div {
+				display: none;
+				&:first-child {
+					display: block;
+				}
+			}
+		}
+	}
+}
+.carousel-inner {
+	.carousel-item.active {
+		display: flex;
+	}
+	.carousel-item-next {
+		display: flex;
+	}
+	.carousel-item-prev {
+		display: flex;
+	}
+	.carousel-item-end {
+		transform: translateX(0);
+	}
+	.carousel-item-start {
+		transform: translateX(0);
+	}
+}
+
