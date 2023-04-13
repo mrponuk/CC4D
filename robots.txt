@@ -1,1 +1,1 @@
-Sitemap: https://mrponuk.github.io/CC4D/sitemap.xml
+Sitemap: cc4d.tech/sitemap.xml
