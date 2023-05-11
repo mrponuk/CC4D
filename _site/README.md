@@ -20,7 +20,7 @@ To run the website locally, you must first install Jekyll and git:
     - If this is your first time cloning a repo this should bring up the Github Credential Manager, make sure to sign in.
 - Navigate to the CC4D root directory: `cd CC4D`
 - Run `docker compose up -d`
-    - The website is now live (this may take a few minutes). Go to your browser and enter: `http://127.0.0.1:4000/CC4D/`
+    - The website is now live (this may take a few minutes). Go to your browser and enter: `http://127.0.0.1:4000/`
 - To stop the website run `docker compose down`
 
 ## Bugs and Issues
