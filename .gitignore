@@ -1,6 +1,7 @@
-.sass-cache
-node_modules
+.sass-cache/
+node_modules/
 Gemfile.lock
 *.gem
-.vscode
-_site
+.vscode/
+_site/
+bin/
