@@ -36,4 +36,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: _site
           cname: cc4d.tech
-          exclude_assets: '.github,markdown-tutorial.md,README.md,LICENCE,docker-compose.yml,package.json,package-lock.json'
+          exclude_assets: '.github,markdown-tutorial.md,markdown-tutorial.html,README.md,LICENCE,docker-compose.yml,package.json,package-lock.json'
