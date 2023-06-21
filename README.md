@@ -23,10 +23,10 @@ To run the website locally, you must first install Jekyll and git:
     - The website is now live (this may take a few minutes). Go to your browser and enter: `http://127.0.0.1:4000/`
 - To stop the website run `docker compose down`
 
-## Creating Markdown Pages
+## Documentation
 
-You can see a basic tutorial for creating markdown files for the posts / projects [here](docs/markdown-tutorial.md).
-There is also a basic tutorial for adding team members to the Our Team page [here](docs/teams-tutorial.md).
+- You can see a basic tutorial for creating markdown files for the posts / projects [here](docs/markdown-tutorial.md).
+- There is also a basic tutorial for adding team members to the Our Team page [here](docs/teams-tutorial.md).
 
 ## Bugs and Issues
 
