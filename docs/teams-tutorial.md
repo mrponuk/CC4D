@@ -6,7 +6,7 @@ This is a basic tutorial on how to add someone to the Our Team page. To add some
 
 - Every field (html_id, name, role, img and description) **MUST** be included in **EACH** entry.
 - Make sure to include a comma after each line and each entry (except the last one).
-- I highly recommend testing before you push to live. See (README.md)[README.md] to see how to test run the site using docker.
+- I highly recommend testing before you push to live. See [README.md](README.md) to see how to test run the site using docker.
 
 ## Example team.json file
 
@@ -62,7 +62,7 @@ This is a basic tutorial on how to add someone to the Our Team page. To add some
 - This string must be a **single line** due to json formatting, meaning no newlines or line breaks. I recommend typing this up in another program and the copy pasting the string into the json file.
 - To create a **newline** (when its rendered on the site) use **\<br>**. Use two of them in a row to start a new paragraph (ie **\<br>\<br>**). This represents a break in html.
 
-As an example the following:
+As an example, the following:
 
     "description": "This is the first paragraph.<br><br>This is the second paragraph."
 
