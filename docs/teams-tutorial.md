@@ -54,7 +54,7 @@ This is a basic tutorial on how to add someone to the Our Team page. To add some
 ### img
 
 - **All images should have a 10:8 aspect ratio.**
-- Place the image file inside [img/team](https://github.com/mrponuk/CC4D/tree/main/img).
+- Place the image file inside [img/team](https://github.com/mrponuk/CC4D/tree/main/img/team).
 - Make sure to use the correct file name and extension inside the json file (ie /img/team/FILENAME.EXTENSION)
 
 ### description
