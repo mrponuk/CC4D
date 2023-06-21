@@ -1,6 +1,6 @@
 # Teams Tutorial
 
-This is a basic tutorial on how to add someone to the Our Team page. To add someone to the teams page you will have to edit the team.json file [found here](/_link/team.json).
+This is a basic tutorial on how to add someone to the Our Team page. To add someone to the teams page you will have to edit the team.json file [found here](/_data/team.json).
 
 ## Some Initial Notes
 
