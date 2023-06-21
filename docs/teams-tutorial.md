@@ -1,6 +1,6 @@
 # Teams Tutorial
 
-This is a basic tutorial on how to add someone to the Our Team page. To add someone to the teams page you will have to edit the team.json file [found here](/_data/team.json).
+This is a basic tutorial on how to add someone to the Our Team page. To add someone to the teams page you will have to edit the team.json file [found here](https://github.com/mrponuk/CC4D/blob/main/_data/team.json).
 
 ## Some Initial Notes
 
@@ -54,7 +54,7 @@ This is a basic tutorial on how to add someone to the Our Team page. To add some
 ### img
 
 - **All images should have a 10:8 aspect ratio.**
-- Place the image file inside [img/team](/img/team).
+- Place the image file inside [img/team](https://github.com/mrponuk/CC4D/tree/main/img).
 - Make sure to use the correct file name and extension inside the json file (ie /img/team/FILENAME.EXTENSION)
 
 ### description
