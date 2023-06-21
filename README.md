@@ -26,6 +26,7 @@ To run the website locally, you must first install Jekyll and git:
 ## Creating Markdown Pages
 
 You can see a basic tutorial for creating markdown files for the posts / projects [here](docs/markdown-tutorial.md).
+There is also a basic tutorial for adding team members to the Our Team page [here](docs/teams-tutorial.md).
 
 ## Bugs and Issues
 
