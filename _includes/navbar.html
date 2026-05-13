@@ -1,7 +1,10 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
   <div class="container">
-    <a class="navbar-brand" href="{{"/" | relative_url }}">{{ site.author | escape }}</a>
+    <a class="navbar-brand d-flex align-items-center" href="{{"/" | relative_url }}">
+      <img src="{{ '/img/cc4d-logo-transparent.png' | relative_url }}" alt="CC4D Logo" style="height: 34px; width: auto; margin-right: 10px;">
+      <span>{{ site.author | escape }}</span>
+    </a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       Menu
       <i class="fa fa-bars"></i>
