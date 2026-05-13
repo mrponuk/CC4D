@@ -48,6 +48,16 @@ background: '/img/bg-about.jpg'
                             <p class="small text-left">
                                 {{member.description}}
                             </p>
+
+                            {% if member.socials %}
+                            <p class="mt-3">
+                            {% if member.socials.facebook %}<a href="{{ member.socials.facebook }}" target="_blank">Facebook</a>{% endif %}
+                            {% if member.socials.x %} | <a href="{{ member.socials.x }}" target="_blank">X</a>{% endif %}
+                            {% if member.socials.linkedin %} | <a href="{{ member.socials.linkedin }}" target="_blank">LinkedIn</a>{% endif %}
+                            {% if member.socials.instagram %} | <a href="{{ member.socials.instagram }}" target="_blank">Instagram</a>{% endif %}
+                            </p>
+                            {% endif %}
+
                             <button class="btn btn-primary" data-dismiss="modal">
                                 <i class="fas fa-xmark fa-fw"></i>
                                 Close Window
