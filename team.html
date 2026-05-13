@@ -7,6 +7,15 @@ background: '/img/bg-about.jpg'
 
 {% assign teamMembers = site.data.team %}
 
+<style>
+    .team-photo {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        object-position: center;
+    }
+</style>
+
 <!-- Team Section-->
 <section class="page-section portfolio my-0">
     <div class="container my-0">
@@ -24,7 +33,7 @@ background: '/img/bg-about.jpg'
             {% for member in teamMembers.team %}
             <div class="col-6 col-md-4 mb-3">
                 <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#{{member.html_id}}">
-                    <img class="img-fluid rounded mb-2" src="{{member.img}}" alt="..." />
+                    <img class="img-fluid rounded mb-2 team-photo" src="{{member.img}}" alt="{{member.name}}" />
                     <h6 class="text-center">{{member.name}}</h6>
                     <h6 class="small text-center">{{member.role}}</h6>
                 </div>
