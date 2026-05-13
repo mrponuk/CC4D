@@ -29,8 +29,8 @@ background: '/img/bg-about.jpg'
         </div>
         <!-- Team Grid Items-->
         <div class="row justify-content-center mb-0">
-            <!-- Team Item 1-->
             {% for member in teamMembers.team %}
+            {% unless member.role contains "Advisor" %}
             <div class="col-6 col-md-4 mb-3">
                 <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#{{member.html_id}}">
                     <img class="img-fluid rounded mb-2 team-photo" src="{{member.img}}" alt="{{member.name}}" />
@@ -38,6 +38,21 @@ background: '/img/bg-about.jpg'
                     <h6 class="small text-center">{{member.role}}</h6>
                 </div>
             </div>
+            {% endunless %}
+            {% endfor %}
+        </div>
+
+        <div class="row justify-content-center mb-0 mt-3">
+            {% for member in teamMembers.team %}
+            {% if member.role contains "Advisor" %}
+            <div class="col-6 col-md-4 mb-3">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#{{member.html_id}}">
+                    <img class="img-fluid rounded mb-2 team-photo" src="{{member.img}}" alt="{{member.name}}" />
+                    <h6 class="text-center">{{member.name}}</h6>
+                    <h6 class="small text-center">{{member.role}}</h6>
+                </div>
+            </div>
+            {% endif %}
             {% endfor %}
         </div>
     </div>
