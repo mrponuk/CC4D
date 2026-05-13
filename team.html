@@ -14,11 +14,20 @@ background: '/img/bg-about.jpg'
         object-fit: cover;
         object-position: center;
     }
+
+    .team-logo {
+        max-width: 140px;
+        width: 100%;
+        height: auto;
+    }
 </style>
 
 <!-- Team Section-->
 <section class="page-section portfolio my-0">
     <div class="container my-0">
+        <div class="text-center mb-3">
+            <img class="team-logo" src="/img/cc4d-logo-transparent.png" alt="CC4D Logo" />
+        </div>
         <!-- Team Section Heading-->
         <h2 class="page-section-heading text-center text-uppercase mb-3">Our Team</h2>
         <!-- Icon Divider-->
@@ -42,11 +51,11 @@ background: '/img/bg-about.jpg'
             {% endfor %}
         </div>
 
-        <h5 class="text-center text-uppercase mt-2 mb-3">Advisors</h5>
+        <h5 class="text-center text-uppercase mt-2 mb-3">************* Advisors *************</h5>
         <div class="row justify-content-center mb-0 mt-1">
             {% for member in teamMembers.team %}
             {% if member.role contains "Advisor" %}
-            <div class="col-6 col-md-4 mb-3">
+            <div class="col-6 col-md-4 col-lg-3 mb-3">
                 <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#{{member.html_id}}">
                     <img class="img-fluid rounded mb-2 team-photo" src="{{member.img}}" alt="{{member.name}}" />
                     <h6 class="text-center">{{member.name}}</h6>
