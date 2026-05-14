@@ -1,0 +1,3 @@
+To run this Locally:
+bundle install
+bundle exec jekyll serve
