@@ -22,6 +22,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Test npm dependencies
+        run: npm audit --package-lock-only --audit-level=moderate
+
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:

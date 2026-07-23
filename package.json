@@ -32,6 +32,9 @@
         "startbootstrap-clean-blog": "5.1.0"
     },
     "devDependencies": {
-        "browser-sync": "2.29.1"
+        "browser-sync": "^3.0.4"
+    },
+    "overrides": {
+        "immutable": "4.3.9"
     }
 }
